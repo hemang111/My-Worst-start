@@ -210,11 +210,17 @@ p {
   position: relative;
 }
 h5 {
-  text-decoration: none;
+  color: var(--zd-color-blue-600);
+  font-weight: 300;
   padding-left: 8px;
   font-family: sans-serif;
+  font-size: 1rem;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
+h5:hover{
+  text-decoration: underline ;
+  
+}
 .image {
   display: flex;
   align-items: center;
