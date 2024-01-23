@@ -300,13 +300,14 @@ h6{
     width: 100%;
   }
 .ham{
+  
   display: flex;
   flex-direction: column;
   background-color: #dadbf1; ;
 }
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: var(--hamburger-gap);
@@ -388,9 +389,9 @@ h6{
 .sidebar {
 
   position: relative;
-
-  transition: transform var(--animation-timing);
-  translate: 200%;
+  overflow-x: hidden;
+  transition: opacity var(--animation-timing);
+  opacity: 0%;
   padding: 0.5rem 1rem;
   padding-top: 0;
   top:-4vh;
@@ -406,6 +407,7 @@ h6{
 }
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
+  opacity: 100%;
 }
 
   .wrap{
