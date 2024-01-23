@@ -46,7 +46,7 @@ input {
   font-size: 2rem;
   border: 1px solid black;
   border-radius: 1px;
-  width:100%;
+  width: 90%;
   height: 8vh ;
   text-align: center;
   transition: all 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -98,7 +98,7 @@ h2 {
   padding-top: 0px;
   padding-bottom: 25px;
   text-align: center;
-  font-size: 10vw;
+  font-size: 10vh;
   font-family: var(--zd-font-family-system);
   font-weight: 400;
   letter-spacing: 1px;
@@ -303,7 +303,8 @@ h6{
   
   display: flex;
   flex-direction: column;
-  background-color: #dadbf1; ;
+  background-color: #dadbf1; 
+  z-index: -1;
 }
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
@@ -378,7 +379,7 @@ h6{
 }
 .searchbox{
   top: -24vh;
-  z-index: -1;
+  z-index: 1;
 }
 .main{
   top:-24vh;
@@ -389,7 +390,7 @@ h6{
 .sidebar {
 
   position: relative;
-  overflow-x: hidden;
+  
   transition: opacity var(--animation-timing);
   opacity: 0%;
   padding: 0.5rem 1rem;
@@ -397,7 +398,7 @@ h6{
   top:-4vh;
   background-color: black;
   color: var(--background);
-  max-width: 100%;
+  max-width: 98%;
   min-height: 10vh;
 }
 .spider{
@@ -406,7 +407,7 @@ h6{
   gap:40px;
 }
 .hamburger-menu:has(input:checked) + .sidebar {
-  translate: 0;
+  z-index: 2;
   opacity: 100%;
 }
 
