@@ -463,6 +463,17 @@ h6{
   .main {
     width: 100%;
   }
+  .hamburger-menu {
+    left: 80%;
+  }
+  .inner{
+     position: relative;
+    left:-10%;
+  }
+  #t1{
+    position: relative;
+  left: -10%
+  }
   .inner-main {
     grid-template-columns: repeat(1, minmax(50px, 0.9fr));
    
