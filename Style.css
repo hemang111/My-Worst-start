@@ -325,7 +325,7 @@ h6{
 
 .hamburger-menu:has(input:checked) {
   --foreground: white;
-  --background: #333;
+  --background:;
 }
 
 .hamburger-menu:has(input:focus-visible)::before,
@@ -341,7 +341,7 @@ h6{
   content: "";
   width: var(--bar-width);
   height: var(--bar-height);
-  background-color: var(--foreground);
+  background-color: white;
   border-radius: 9999px;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),
