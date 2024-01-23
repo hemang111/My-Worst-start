@@ -54,6 +54,9 @@ input {
   
  
 }
+input:focus{
+  outline: none;
+}
 .input-container {
 
   display: flex;
@@ -64,7 +67,7 @@ input {
   
 }
 
-.input-container:hover .inpt {
+.inpt:hover {
   box-shadow: 8px 6px 0px 3px rgb(12, 12, 12);
 }
 
@@ -395,7 +398,7 @@ h6{
   opacity: 0%;
   padding: 0.5rem 1rem;
   padding-top: 0;
-  top:-6vh;
+  top:-6.5vh;
   background-color: black;
   color: var(--background);
   max-width: 98%;
@@ -502,6 +505,12 @@ h6{
   #button2,
   #button1 {
     display: none;
+  }
+  h6{
+    font-size: 18px;
+  }
+  .text1{
+    font-size: 15px;
   }
 }
 
